@@ -16,8 +16,9 @@ const cors = require('cors')
 
 //////MIDDLEWARE//////
 app.use(express.json())
-app.use('/recipes', recipesController)
 app.use(cors())
+app.use('/recipes', recipesController)
+
 app.use(express.urlencoded({ extended: true }))
 
 
